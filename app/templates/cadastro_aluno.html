@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Presença 100% - Usuario</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',
+  filename="css/util.css")}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',
+  filename="css/main.css")}}">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form action="{{url_for('aluno')}}" method="POST" class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					<img src="{{ url_for('static', filename='img/logol.png')}}" class="logo" width="90%">
+				</span>
+				<div class="title">
+					<h1>Presença 100%</h1>
+				</div>
+				<label class="label-input100" for="email"><strong>Nome</strong></label>
+				<div class="wrap-input100 validate-input">
+					<input class="input100" type="text" name="nome" placeholder="Digite seu nome">
+					<span class="focus-input100"></span>
+				</div>
+				<label class="label-input100" for="email"><strong>Matrícula</strong></label>
+				<div class="wrap-input100 validate-input">
+					<input class="input100" type="text" name="matricula" placeholder="Digite sua matrícula">
+					<span class="focus-input100"></span>
+				</div>
+				<label class="label-input100" for="email"><strong>E-mail</strong></label>
+				<div class="wrap-input100 validate-input">
+					<input class="input100" type="text" name="email" placeholder="Digite seu E-mail">
+					<span class="focus-input100"></span>
+				</div>
+				<label class="label-input100" for="email"><strong>Senha</strong></label>
+				<div class="wrap-input100 validate-input">
+					<input class="input100" type="password" name="senha" placeholder="Digite uma senha">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button type="submit" class="contact100-form-btn">
+						<span>
+							enviar<i class="zmdi zmdi-arrow-right m-l-8"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
