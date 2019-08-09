@@ -49,7 +49,7 @@ def aluno():
             alu = User(nome, matricula, senha, email)
             db.session.add(alu)
             db.session.commit()
-            return redirect(url_for("logout"))
+            return render_template('professor.html')
         return redirect(url_for("aluno"))
     else:
         return render_template('cadastro_aluno.html')
@@ -78,7 +78,7 @@ def cadastro():
 @app.route("/teste/<info>")
 @app.route("/teste", defaults={"info":None})
 def teste(info):
-    i = Post("Daniel","daniel","aa@aa",1)
+    i = Post("ana","aana","aa@aa",1)
     db.session.add(i)
     db.session.commit()
     return "ok"

@@ -45,10 +45,27 @@ body{
     top:5%;
     left:32%;
 }
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  text-decoration: none;
+}
+#sair{
+  position: absolute;
+  width: 3%;
+  height: 2%;
+  font-size: 22px;
+  border-radius: 15%;
+  opacity: 0.5;
+  top: 0px;
+}
 </style>
 
 </head>
 <body>
+  <div id="sair">
+    <a href="{{url_for('logout')}}"><h5>SAIR</h5></a>
+  </div>
     <div id="titulo">Presença 100%</div>
     <div id="user">
     <form action="{{url_for('aluno')}}" method="POST" class="users" name="professor"  style="text-align: center;">
